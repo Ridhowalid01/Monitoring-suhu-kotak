@@ -1,0 +1,60 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[top=3cm, left=4cm, bottom=3cm,right=3cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage[indonesian]{babel}  % Gunakan 'bahasa' sesuai kebutuhan Anda
+\usepackage{graphicx}
+\addto\captionsbahasa{%
+  \renewcommand{\figurename}{Gambar}%
+}
+\usepackage{float}
+\usepackage{indentfirst}
+\usepackage{setspace}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+
+\onehalfspacing
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\renewcommand{\arraystretch}{1.5} % Ganti faktor sesuai kebutuhan
+\lstset{
+    language=C++,
+    numberstyle=\ttfamily,
+    basicstyle=\ttfamily,
+    keywordstyle=\color{blue}\ttfamily,
+    stringstyle=\color{red}\ttfamily,
+    commentstyle=\color{gray}\ttfamily,
+    morecomment=[l][\color{magenta}]{//},
+    breaklines=true,
+    postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+}
+\newcommand*{\captionsource}[1]{%
+    \par\centering{\textit{Source:} #1}%
+}
+\usepackage{natbib}
+\renewcommand{\bibsection}{\section*{\centering DAFTAR PUSTAKA}}
+
+\begin{document}
+
+\title{Laporan Proyek Desain Aplikasi dan Internet of Thing}
+\author{Kelompok 6}
+\date{November 2023}
+
+    \input{cover}
+    \newpage
+    \input{BAB1}
+    \newpage
+    \input{BAB2}
+    \newpage
+    \input{BAB3}
+    \newpage
+    \input{BAB4}
+    \newpage
+    \input{BAB5}
+    \newpage
+    \bibliographystyle{plain}
+    \bibliography{myreference}
+    \newpage
+    \input{Lampiran}
+
+\end{document}
